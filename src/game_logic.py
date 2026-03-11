@@ -1,13 +1,22 @@
 import random
 
+
 class HangmanGame:
-    def __init__(self):
-        self.words = ["PYTHON", "HANGMAN", "DEVELOPER", "CODE", "PROGRAM"]
+    def __init__(self, difficulty="Medium"):
+        self.word_sets = {
+            "Easy": ["CAT", "DOG", "BOOK", "TREE", "GAME"],
+            "Medium": ["PYTHON", "HANGMAN", "PROGRAM", "WINDOW", "BUTTON"],
+            "Hard": ["DEVELOPER", "ALGORITHM", "FUNCTION", "COMPUTER", "KEYBOARD"],
+        }
+        self.set_difficulty(difficulty)
+
+    def set_difficulty(self, difficulty):
+        self.difficulty = difficulty
+        self.words = self.word_sets[difficulty]
         self.reset_game()
 
     def reset_game(self):
-        """Initialize a new game."""
-        self.secret_word = random.choice(self.words).upper()
+        self.secret_word = random.choice(self.words)
         self.guessed_letters = set()
         self.wrong_guesses = set()
         self.max_wrong = 6
@@ -15,21 +24,28 @@ class HangmanGame:
         self.won = False
 
     def guess_letter(self, letter):
-        """Process a guessed letter."""
         letter = letter.upper()
-        if self.game_over or not letter.isalpha() or len(letter) != 1:
-            return
+
+        if self.game_over:
+            return None
+
+        if not letter.isalpha() or len(letter) != 1:
+            return None
+
+        if letter in self.guessed_letters or letter in self.wrong_guesses:
+            return None
 
         if letter in self.secret_word:
             self.guessed_letters.add(letter)
+            self.check_game_over()
+            return True
         else:
             self.wrong_guesses.add(letter)
-
-        self.check_game_over()
+            self.check_game_over()
+            return False
 
     def check_game_over(self):
-        """Check if player won or lost."""
-        if all(l in self.guessed_letters for l in self.secret_word):
+        if all(letter in self.guessed_letters for letter in self.secret_word):
             self.game_over = True
             self.won = True
         elif len(self.wrong_guesses) >= self.max_wrong:
@@ -37,9 +53,10 @@ class HangmanGame:
             self.won = False
 
     def get_display_word(self):
-        """Return the secret word with underscores for unguessed letters."""
-        return " ".join([l if l in self.guessed_letters else "_" for l in self.secret_word])
+        return " ".join(
+            letter if letter in self.guessed_letters else "_"
+            for letter in self.secret_word
+        )
 
     def get_wrong_guesses(self):
-        """Return wrong guesses as a string."""
         return ", ".join(sorted(self.wrong_guesses))
