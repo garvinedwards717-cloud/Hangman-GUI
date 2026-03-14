@@ -1,57 +1,171 @@
-# 🎮 Hangman GUI Game
 
-A Python-based Hangman game with a graphical interface, sound effects, and interactive gameplay. Perfect example of a beginner-to-professional Python GUI project.
+🎮 Hangman GUI
 
----
+A polished Python Hangman word game built with Pygame, featuring a modern UI, selectable word categories, sound effects, and difficulty levels.
 
-## 📸 Screenshots
+This project started as a beginner Python game and evolved into a modular, well-structured application with improved UI layout, assets, and gameplay features.
 
-![Main Window](screenshots/main_window.png)  
-![Losing Eyes Animation](screenshots/losing_eyes.png)
-![Win Window](screenshots/win_window.png)
+✨ Features
 
----
+Modern animated menu interface
 
-## 🚀 Features
+🎯 Difficulty levels
 
-- Interactive GUI built with Pygame
-- Word selection and guessing logic
-- Win/Lose sound effects
-- Losing eyes animation
-- Background music support
-- Polished layout with class-based structure
-- Progressive hangman drawing: body parts are added to the gallows with each incorrect guess
+Easy
 
----
+Medium
 
-## 🛠 Tech Used
+Hard
 
-- Python 3
-- Pygame
+🗂 Word categories
 
----
+Animals 🐾
 
-## ▶️ How To Run
+Movies 🎬
 
-1. Clone the repository:
-```bash
-git clone https://github.com/garvinedwards717_cloud/HangmanGUI.git
-```
-2. Navigate to the project folder:
-```bash
-cd HangmanGUI
-```
-3. Install dependencies:
-```bash
-pip install -r requirements.txt
-```
-4. Run the game:
-```bash
-python main.py
-```
+Programming 💻
 
----
+Countries 🌍
 
-## 📌 Project Status
+Food 🍔
 
-🚧 Currently being upgraded with additional features and improvements.
+Random 🎲
+
+🔊 Sound system
+
+Background music
+
+Correct guess sound
+
+Wrong guess sound
+
+Win sound
+
+Lose sound
+
+📊 Score tracking
+
+🔥 Streak tracking
+
+🏆 Best streak tracking
+
+⌨️ Keyboard gameplay
+
+🧩 Clean modular project structure
+
+📸 Screenshots
+Main Menu
+
+Gameplay
+
+Win Screen
+
+Lose Screen
+
+🎮 Controls
+⌨️ Keyboard
+Key	Action
+A–Z	Guess letter
+1	Easy difficulty
+2	Medium difficulty
+3	Hard difficulty
+SHIFT	Return to menu
+ENTER   Restart
+🖱 Mouse
+
+Click menu buttons
+
+Select difficulty
+
+Select category
+
+Toggle sound
+
+📁 Project Structure
+
+Hangman-GUI
+│
+├─ src
+│ ├─ main.py
+│ ├─ ui.py
+│ └─ game_logic.py
+│
+├─ sounds
+│ ├─ background.mp3
+│ ├─ correct.wav
+│ ├─ wrong.wav
+│ ├─ win.wav
+│ └─ lose.wav
+│
+├─ screenshots
+│ ├─ menu.png
+│ ├─ gameplay.png
+│ ├─ win.png
+│ └─ lose.png
+│
+├─ requirements.txt
+└─ README.md
+
+⚙️ Installation
+
+Clone the repository
+
+git clone https://github.com/garvinedwards717-cloud/Hangman-GUI.git
+
+cd Hangman-GUI
+
+Create a virtual environment
+
+python -m venv venv
+
+Activate it
+
+Windows
+
+venv\Scripts\activate
+
+Mac / Linux
+
+source venv/bin/activate
+
+Install dependencies
+
+pip install pygame
+
+Run the game
+
+python src/main.py
+
+🚀 Future Improvements
+
+Possible upgrades:
+
+📱 Mobile version
+
+🏆 Leaderboard system
+
+📦 More word packs
+
+⚙️ Settings menu
+
+🎨 Animated hangman drawing
+
+📊 Game statistics
+
+🛠 Technologies Used
+
+Python
+
+Pygame
+
+Git
+
+GitHub
+
+👨‍💻 Author
+
+Garvin Edwards
+
+📜 License
+
+This project is open source and available under the MIT License.
