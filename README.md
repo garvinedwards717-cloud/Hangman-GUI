@@ -5,6 +5,13 @@ A polished Python Hangman word game built with Pygame, featuring a modern UI, se
 
 This project started as a beginner Python game and evolved into a modular, well-structured application with improved UI layout, assets, and gameplay features.
 
+
+## ⬇ Download
+
+Download the Windows version of Hangman here:
+
+👉 https://github.com/garvinedwards717-cloud/Hangman-GUI/releases
+
 ✨ Features
 
 Modern animated menu interface
