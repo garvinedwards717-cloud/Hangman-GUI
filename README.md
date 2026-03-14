@@ -1,5 +1,10 @@
-
 🎮 Hangman GUI
+
+## 🎥 Demo
+
+<p align="center">
+  <img src="screenshots/demo.gif" width="80%">
+</p>
 
 A polished Python Hangman word game built with Pygame, featuring a modern UI, selectable word categories, sound effects, and difficulty levels.
 
