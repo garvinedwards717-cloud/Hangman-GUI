@@ -1,9 +1,12 @@
-🎮 Hangman GUI
+<p align="center">
 
-""Download" (https://img.shields.io/badge/Download-Windows%20Executable-blue?style=for-the-badge)" (https://github.com/garvinedwards717-cloud/Hangman-GUI/releases)
-"Python" (https://img.shields.io/badge/Python-3.13-blue?style=for-the-badge)
-"Pygame" (https://img.shields.io/badge/Pygame-2.6-green?style=for-the-badge)
+# 🎮 Hangman GUI
 
+[![Download](https://img.shields.io/badge/Download-Windows%20Executable-blue?style=for-the-badge)](https://github.com/garvinedwards717-cloud/Hangman-GUI/releases)
+![Python](https://img.shields.io/badge/Python-3.13-blue?style=for-the-badge)
+![Pygame](https://img.shields.io/badge/Pygame-2.6-green?style=for-the-badge)
+
+</p>
 A polished desktop Hangman word game built with Python and Pygame, featuring a modern animated interface, selectable categories, difficulty levels, sound effects, and persistent scoring.
 
 ---
