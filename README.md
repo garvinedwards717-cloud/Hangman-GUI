@@ -1,5 +1,7 @@
 🎮 Hangman GUI
 
+[![Download](https://img.shields.io/badge/Download-Windows%20Executable-blue?style=for-the-badge)](https://github.com/garvinedwards717-cloud/Hangman-GUI/releases)
+
 ## 🎥 Demo
 
 <p align="center">
