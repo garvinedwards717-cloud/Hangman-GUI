@@ -2,7 +2,7 @@
 
 # 🎮 Hangman GUI
 
-[![Download](https://img.shields.io/badge/Download-Windows%20Executable-blue?style=for-the-badge)](https://github.com/garvinedwards717-cloud/Hangman-GUI/releases)
+[![Download](https://img.shields.io/badge/Download-Windows%20Executable-blue?style=for-the-badge)](https://github.com/AutoForge-atd/Hangman-GUI/releases)
 ![Python](https://img.shields.io/badge/Python-3.13-blue?style=for-the-badge)
 ![Pygame](https://img.shields.io/badge/Pygame-2.6-green?style=for-the-badge)
 
@@ -74,7 +74,7 @@ Main Menu
 
 Download the Windows version of Hangman here:
 
-👉 https://github.com/garvinedwards717-cloud/Hangman-GUI/releases
+👉 https://github.com/AutoForge-atd/Hangman-GUI/releases
 
 After downloading:
 
@@ -103,7 +103,7 @@ If you want to run the game from source:
 
 Clone the repository
 
-git clone https://github.com/garvinedwards717-cloud/Hangman-GUI.git
+git clone https://github.com/AutoForge-atd/Hangman-GUI.git
 
 cd Hangman-GUI
 
@@ -157,8 +157,8 @@ Hangman-GUI
 
 👨‍💻 Author
 
-Garvin Edwards
-Python Developer | Automation & Desktop Tools
+Autoforge
+Python Developer | Automation Tools Developer
 
 GitHub:
-https://github.com/garvinedwards717-cloud
+https://github.com/AutoForge-atd
